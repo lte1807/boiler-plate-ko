@@ -13,6 +13,10 @@ const userSchema = mongoose.Schema({
         trim: true, //lee tae@naver.com 빈칸을 없애주는 역할
         unique: 1
     },
+    password: {
+        type: String,
+        maxlength: 5
+    },
     lastname: {
         type: String,
         maxlength: 50
